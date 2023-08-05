@@ -3,93 +3,46 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+   
+        <main className={styles.main}>
+          <h1>InformARt</h1>
+          <h2>Misión:</h2>
+          <ul>
+            <li>A través del análisis crítico y riguroso, buscamos identificar y denunciar las injusticias laborales</li>
+            <li>Promovemos la organización y la movilización de lxs trabajadorxs para defender sus derechos</li>
+            <li>Buscamos la aplicación efectiva de los mismos y conquistar mejoras en sus condiciones laborales</li>
+        </ul>
+          
+    
+    
+          <h2>Visión:</h2>
+        <ol>
+            <li>Buscamos una sociedad en la que los medios de producción estén en manos de la clase trabajadora, se hayan abolido las desigualdades sociales y se haya instaurado una democracia genuina en todos los aspectos de la vida, incluido el ámbito laboral.</li>
+            <li>Trabajamos para fortalecer la conciencia de clase entre lxs trabajadorxs y para que sean protagonistas de su propia liberación.</li>
+        </ol>
+    
+        <h2>Valores:</h2>
+        <ul>
+            <li>Conciencia de clase</li>
+            <li>Solidaridad internacional</li>
+            <li>Anti asimilacionismo</li>
+            <li>Antiracismo</li>
+            <li>Antipunitivismo (esto lo pondría por los antecedentes penales que muchas veces no se cumple el cupo por este punto)</li>
+        </ul>
+    
+        <ol>
+            <li>Justicia</li>
+            <li>Independencia</li>
+            <li>Transparencia</li>
+        </ol>
+    
+    
+    
+          
+         
+        </main>
+      )
+    }
+    
+    
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
