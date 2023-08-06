@@ -1,19 +1,13 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
-   
-        <main className={styles.main}>
-          <h1>InformARt</h1>
-
-          <h3>
-            <a href=""> ¿Quiénes somos? -</a>
-            <a href=""> Informes -</a>
-            <a href=""> Fact Checking -</a>
-            <a href=""> Recursero -</a>
-          </h3>
-
+    <main>
+        <div className="flex justify-center items-center">
+          <Image className="text-current filter invert" src="/telescopio.svg" width={400} height={400} alt="InformARt" />
+        </div>
           <h2>¿Quiénes somos?</h2>
           <p>El Observatorio de Monitoreo y Evaluación del Cumplimiento de la Ley de Cupo Laboral Trans es una red de personas trans y no binarias dedicada a garantizar la efectiva aplicación de la Ley 27.636, conocida como la Ley de Promoción del Acceso al Empleo Formal para personas Travestis, Transexuales y Transgénero "Diana Sacayán-Lohana Berkins". Esta ley fue sancionada en Argentina en el año 2021 y establece que el sector público nacional debe reservar, al menos, el 1% de sus cargos y vacantes para personas travestis, transexuales y transgénero.  Nuestra labor se enfoca en monitorear la implementación del cupo en el sector público. Como parte de nuestro compromiso con la transparencia y la rendición de cuentas, publicamos informes regulares que elaboramos a partir de pedidos de acceso a la información pública. Estos informes brindan una visión clara y objetiva sobre el avance y los desafíos en la implementación del cupo laboral trans en el sector público, así como las áreas que requieren mayor atención para lograr una inclusión laboral plena y justa.  Nuestro objetivo es seguir ser una referencia ineludible en la evaluación del cumplimiento de los derechos de las personas trans y no binarias en Argentina, contribuyendo así a una sociedad más justa e inclusiva para todxs.</p>
           <h2>¿Qué hacemos?</h2>
@@ -62,13 +56,11 @@ export default function Home() {
         <h2>¿Cómo apoyar esta causa?</h2>
 
 <p>Tus aportes son fundamentales para impulsar una inclusión laboral justa y equitativa para las personas trans y no binarias en el sector público. Cada contribución que recibimos nos permite fortalecer nuestra labor de investigación, seguimiento y defensa de los derechos laborales de la comunidad trans.</p>
-<a href="">Dona aqui</a>
+<Link href="/donar">Dona aqui</Link>
     
           
          
         </main>
-      )
-    }
-    
-    
 
+  );
+}
