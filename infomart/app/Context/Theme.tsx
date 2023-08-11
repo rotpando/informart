@@ -1,22 +1,23 @@
 'use client';
 
-import { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 interface ThemeContextType {
-    lang: string;
-    setLang: (lang: string) => void;
-  }
-  
-const ThemeContext = createContext({})
+  lang: string;
+  setLang: (lang: string) => void;
+}
 
-export const ThemeContextProvider = ({ children }) => {
-    const [lang, setLang] = useState('es');
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-    return (
-        <ThemeContext.Provider value={{ lang, setLang }}>
-            {children}
-        </ThemeContext.Provider>
-    )
+export const ThemeContextProvider: React.FC = ({ children }) => {
+  const [lang, setLang] = useState('es');
+
+  return (
+    <ThemeContext.Provider value={{ lang, setLang }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
-export const useThemeContext = () => useContext(ThemeContext);
+export const useThemeContext = (): ThemeContextType | undefined =>
+  useContext(ThemeContext);
