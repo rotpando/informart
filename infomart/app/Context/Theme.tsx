@@ -24,5 +24,5 @@ export const ThemeContextProvider: React.FC<{ children: ReactNode }> = ({ childr
   );
 };
 
-export const useThemeContext = (): ThemeContextType | undefined =>
+export const useThemeContext = (): ThemeContextType  =>
   useContext(ThemeContext);
