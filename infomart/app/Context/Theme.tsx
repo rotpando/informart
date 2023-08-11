@@ -1,6 +1,7 @@
 'use client';
 
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, ReactNode } from "react";
+
 
 interface ThemeContextType {
   lang: string;
@@ -9,7 +10,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const ThemeContextProvider: React.FC = ({ children }) => {
+export const ThemeContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [lang, setLang] = useState('es');
 
   return (
