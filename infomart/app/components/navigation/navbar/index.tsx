@@ -6,8 +6,14 @@ import Image from "next/image";
 
 
 const Navbar = () => {
-  function changeLanguage() {}
-  const {lang, setLang} = useThemeContext();
+  const themeContext = useThemeContext();
+
+  if (!themeContext) {
+    // Manejar el caso cuando el contexto sea undefined
+    return null; // O mostrar algún mensaje temporal, un cargador, etc.
+  }
+
+  const { lang, setLang } = themeContext;
   return (
     <>
      <div className="w-full h-20 bg-emerald-800 bg-opacity-70 backdrop-blur-md sticky top-0">
