@@ -7,8 +7,12 @@ interface ThemeContextType {
   lang: string;
   setLang: (lang: string) => void;
 }
+const defaultThemeContextValue: ThemeContextType = {
+    lang: 'en', // Proporciona un valor predeterminado para lang
+    setLang: () => {}, // Proporciona una función predeterminada para setLang
+  };
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext<ThemeContextType>(defaultThemeContextValue);
 
 export const ThemeContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [lang, setLang] = useState('es');
