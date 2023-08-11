@@ -1,26 +1,26 @@
-import Navigation from "./components/navigation/navbar";
+import Navbar from "./components/navigation/navbar";
 import Footer from "./components/navigation/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "InformARt",
-  description: "Seguimiento de la ley de cupo travesti trans y recursos para la comunidad travesti trans en  en Argentina",
-};
+import { ThemeContextProvider } from './Context/Theme'
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  
   return (
-    <html lang="en">
+    <html>
       <body className={inter.className}>
-        <Navigation />
+      <ThemeContextProvider>
+        <Navbar/>
         {children}
         <Footer/>
+      </ThemeContextProvider>
       </body>
     </html>
   );

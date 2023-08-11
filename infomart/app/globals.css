@@ -43,9 +43,13 @@ body {
 }
 
 main {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
 
+.transition {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

@@ -1,10 +1,12 @@
+'use client'
+import { useThemeContext } from '../../../Context/Theme'
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-//import Logo from "./Logo";
-//import Button from "./Button";
 
 const Navbar = () => {
+  function changeLanguage() {}
+  const {lang, setLang} = useThemeContext();
   return (
     <>
      <div className="w-full h-20 bg-emerald-800 bg-opacity-70 backdrop-blur-md sticky top-0">
@@ -30,28 +32,28 @@ const Navbar = () => {
               </li>
               <li className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:translate-y-1">
                 <Link href="/informes">
-                  <p>Informes</p>
+                <p>{lang === 'es' ? 'Informes' : 'Reports'}</p>
                 </Link>
               </li>
               <li className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:translate-y-1">
                 <Link href="/recursero">
-                  <p>Recursero</p>
+                <p>{lang === 'es' ? 'Mapas' : 'Maps'}</p>
+                </Link>
+              </li>
+              <li className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:translate-y-1">
+                <Link href="/contacto">
+                <p>{lang === 'es' ? 'Contactanos' : 'Contact us'}</p>
                 </Link>
               </li>
               <li className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:translate-y-1">
                 <Link href="/donar">
-                  <p>Donar</p>
+                <p>{lang === 'es' ? 'Donar' : 'Donate'}</p>
                 </Link>
               </li>
               <li className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:translate-y-1">
-                <Link href="/contacto">
-                  <p>Contactanos</p>
-                </Link>
-              </li>
-              <li className="flex items-center space-x-2 transition duration-300 ease-in-out transform hover:translate-y-1">
-                <Link href="/contacto">
-                  <p>English</p>
-                </Link>
+                <button onClick={()=> lang === 'es' ? setLang('en') : setLang('es')}>
+                <p>{lang === 'es' ? 'English' : 'Español'}</p>
+                </button>
               </li>
             </ul>
             
