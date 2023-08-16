@@ -11,7 +11,7 @@ const Navbar = () => {
   const { lang, setLang } = themeContext;
   return (
     <>
-     <div className="w-full h-20 bg-emerald-800 bg-opacity-70 backdrop-blur-md sticky top-0">
+     <div className="w-full h-20 bg-emerald-800 bg-opacity-70 backdrop-blur-md sticky top-0" style={{ zIndex: 9999, position: 'fixed' }}>
       <div className="container mx-auto px-4 h-full">
         <div className="flex justify-between items-center h-full">
           

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
         <AnimatedDiv delay={0.3}>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center" >
           <Image className="text-current filter invert" src="/telescopio.svg" width={400} height={400} alt="InformARt" />
         </div>
         </AnimatedDiv>
