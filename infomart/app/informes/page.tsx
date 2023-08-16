@@ -26,7 +26,7 @@ const Informes: React.FC = () => {
 <p>{lang === 'es' ? 'Datos elaborados a partir de la información provista por la Subsecretaría de Diversidad del MMGYD sobre respaldatoria del Séptimo Informe de Implementación de Ley 27636' : 'Data compiled from information provided by the Undersecretariat of Diversity of the MMGYD regarding the supporting documentation of the Seventh Report of Implementation of Law 27,636.'} 
 </p>
 
-    </div>
+    </div> 
   );
 
   return (
