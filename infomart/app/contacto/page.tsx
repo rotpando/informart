@@ -8,18 +8,7 @@ const EmailForm = () => {
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (event:any) => {
-    event.preventDefault();
-    if (email && message) {
-      const mail = {
-        to: 'informart@gmail.com',
-        subject: 'Email from Next.js App',
-        body: message,
-      };
-      //const sendEmail = useEmail(mail);
-      //sendEmail.then((response) => {
-      //  setSent(true);
-      //});
-    }
+   
   };
 
   return (
