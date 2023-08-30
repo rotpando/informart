@@ -4,6 +4,11 @@ import React from 'react';
 import Dropdown from '../components/Dropdown';
 import ComponenteReact from './01';
 import ComponenteReactEn from './01en';
+import ComponenteReact2 from './02';
+import ComponenteReactEn2 from './02en';
+import ComponenteReact1 from './03';
+import ComponenteReactEn1 from './03en';
+
 
 const Informes: React.FC = () => {
   const themeContext = useThemeContext();
@@ -17,16 +22,16 @@ const Informes: React.FC = () => {
     <ComponenteReactEn></ComponenteReactEn>
   );
   const dropdownContent1 = (
-    <ComponenteReact></ComponenteReact>
+    <ComponenteReact1></ComponenteReact1>
   );
   const dropdownContentEn1 = (
-    <ComponenteReactEn></ComponenteReactEn>
+    <ComponenteReactEn1></ComponenteReactEn1>
   );
   const dropdownContent2 = (
-    <ComponenteReact></ComponenteReact>
+    <ComponenteReact2></ComponenteReact2>
   );
   const dropdownContentEn2 = (
-    <ComponenteReactEn></ComponenteReactEn>
+    <ComponenteReactEn2></ComponenteReactEn2>
   );
 
   return (
@@ -34,19 +39,17 @@ const Informes: React.FC = () => {
       <br/>
       <br/>
       <h2>{lang === 'es' ? 'Informes' : 'Reports'}</h2>
+      <p>{lang === 'es' ? 'Algunos informes aun no han sido subidos.' : 'Some reports are not yet online.'}</p>
+      <br/>
       {lang === 'es' ? (
   <Dropdown title={'Mayo 2023'} content={dropdownContent} />
 ) : (
   <Dropdown title={'May 2023'} content={dropdownContentEn} />
 )}
       {lang === 'es' ? (
-  <Dropdown title={'Octubre 2023'} content={dropdownContent} />
+  <Dropdown title={'Marzo 2022'} content={dropdownContent2} />
 ) : (
-  <Dropdown title={'October 2023'} content={dropdownContentEn} />
-)}{lang === 'es' ? (
-  <Dropdown title={'Marzo 2023'} content={dropdownContent} />
-) : (
-  <Dropdown title={'March 2023'} content={dropdownContentEn} />
+  <Dropdown title={'March 2022'} content={dropdownContentEn2} />
 )}
       
     </main>

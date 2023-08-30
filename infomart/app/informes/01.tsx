@@ -86,7 +86,7 @@ const ComponenteReact: React.FC = () => {
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 <PieChart width={400} height={400}>
       <Pie
-        data={data}
+        data={data1}
         dataKey="value"
         cx="50%"
         cy="50%"
@@ -95,7 +95,7 @@ const ComponenteReact: React.FC = () => {
         fill="#8884d8"
         label
       >
-        {data1.map((entry, index) => (
+        {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
@@ -167,7 +167,7 @@ const ComponenteReact: React.FC = () => {
         fill="#8884d8"
         label
       >
-        {data.map((entry, index) => (
+        {data1.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
