@@ -23,7 +23,7 @@ const EmailForm = () => {
           <input 
             type="email" 
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            
             className="px-4 py-2 mt-2 border rounded-lg  focus:outline-none focus:ring-1 focus:ring-sky-500" 
             style={{ width: '450px'}}
           />
@@ -33,7 +33,7 @@ const EmailForm = () => {
           <p>Message: </p>
           <textarea
   value={message} 
-  onChange={(event) => setMessage(event.target.value)} 
+  
   className="px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-sky-500 resize-none"
   style={{ width: '450px', height: '400px' }}
 />
