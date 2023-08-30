@@ -7,7 +7,7 @@ const Informes: React.FC = () => {
   const themeContext = useThemeContext();
 
   const { lang, setLang } = themeContext;
-  const dropdownTitle = 'Informe Mayo 2023 / Report May 2023';
+  
   const dropdownContent = (
     <div className="dropdown-content-wrapper">
       
@@ -33,9 +33,11 @@ const Informes: React.FC = () => {
     <main>
       <br/>
       <br/>
-      <h2>Informes</h2>
-      <Dropdown title={dropdownTitle} content={dropdownContent} />
-      {/* ...otros elementos de tu página... */}
+      <h2>{lang === 'es' ? 'Informes' : 'Reports'}</h2>
+
+      <Dropdown title={'Mayo 2023 / May 2023'} content={dropdownContent} />
+      <Dropdown title={'Octubre 2023 / Oct 2023'} content={dropdownContent} />
+      <Dropdown title={'Marzo 2023 / March 2023'} content={dropdownContent} />
     </main>
   );
 };
