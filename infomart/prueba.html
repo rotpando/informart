@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.wizard {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.wizard-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.wizard-steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wizard-step {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wizard-step.active {
+  background-color: #ccc;
+}
+
+.wizard-content {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="wizard">
+  <div class="wizard-header">
+    <h1>Wizard</h1>
+  </div>
+
+  <ul class="wizard-steps">
+    <li class="wizard-step active">Step 1</li>
+    <li class="wizard-step">Step 2</li>
+    <li class="wizard-step">Step 3</li>
+    <li class="wizard-step">Step 4</li>
+  </ul>
+
+  <div class="wizard-content">
+    <h2>Step 1</h2>
+    <p>This is the first step of the wizard.</p>
+  </div>
+</div>
+
+</body>
+</html>

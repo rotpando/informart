@@ -24,19 +24,19 @@ const ComponenteReact: React.FC = () => {
     <>
     <h2>May 2023 Report</h2>
 <p>
-Law No. 27,636, for the Promotion of Access to Formal Employment for Transvestite, Transsexual and Transgender People Diana Sacayán-Lohana Berkins, was enacted in June 2021 and established that the Argentine State must employ, in a proportion no less than 1% of the total staff, job positions for transvestite, transsexual and transgender people, in all modalities of regular hiring in force. A deadline of two years was set, counted from 24/6/2021, to comply with these obligations and a Unique Registry of Applicants was created to receive applications.
+Law No. 27,636, for the Promotion of Access to Formal Employment for Transsexual and Transgender People Diana Sacayán-Lohana Berkins, was enacted in June 2021 and established that the Argentine State must employ, in a proportion no less than 1% of the total staff, job positions for transsexual and transgender people, in all modalities of regular hiring in force. A deadline of two years was set, counted from 24/6/2021, to comply with these obligations and a Unique Registry of Applicants was created to receive applications.
 </p>
 <p>
-To comply with the Law, as of June 2023 there should be 4,553 transvestite, transsexual and/or transgender people working in the Public Administration.
+To comply with the Law, as of June 2023 there should be 4,553 , transsexual and/or transgender people working in the Public Administration.
 </p>
 <h2>
 As of May 29, 2023 the data show that:
 </h2>
 <ol className="list-decimal">
-<li className="mb-2">7,748 transvestite, transsexual and/or transgender people registered in the unique registry of applicants</li>
-<li className="mb-2">709 transvestite, transsexual and/or transgender people currently work in the National Executive Branch, centralized and decentralized agencies</li>
+<li className="mb-2">7,748 transsexual and/or transgender people registered in the unique registry of applicants</li>
+<li className="mb-2">709 transsexual and/or transgender people currently work in the National Executive Branch, centralized and decentralized agencies</li>
 <li className="mb-2">11% of the state agencies fully comply with the quota policy, 22% do not comply with it at all and 5.3% have not responded regarding compliance with the Law.</li>
-<li className="mb-2">23.84% of transvestite, transsexual and/or transgender people currently working in the public administration do so on a permanent staff basis; 11.42% as temporary staff; 39.49% under contract modalities provided for by the framework law; 17.21% under other modalities; 0.99% under contract regime for service hiring decree N°1,109/17; and 2.4% without disaggregated data by type of hiring.</li>
+<li className="mb-2">23.84% of transsexual and/or transgender people currently working in the public administration do so on a permanent staff basis; 11.42% as temporary staff; 39.49% under contract modalities provided for by the framework law; 17.21% under other modalities; 0.99% under contract regime for service hiring decree N°1,109/17; and 2.4% without disaggregated data by type of hiring.</li>
 </ol>
 
 <table className="table-auto">

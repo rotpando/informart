@@ -12,7 +12,7 @@ const Footer = () => {
             
             <ul className="hidden md:flex gap-x-6 text-white">
               <li>
-                <p>2023 - Buenos Aires, Argentina</p>
+                <sub>2023 - Buenos Aires, Argentina</sub>
                 <Link href="/contacto">
                   <p>Contacto</p>
                 </Link>
