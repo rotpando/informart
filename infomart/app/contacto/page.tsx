@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { useEmail } from 'react-email';
+
 
 const EmailForm = () => {
   const [email, setEmail] = useState('');
