@@ -93,16 +93,5 @@ const Navbar = () => {
 
 
 
-// Reusable NavItem component
-const NavItem = ({icon: Icon, path, label}) => {
-  return (
-    <Link href={path}>
-      <div className="flex items-center space-x-2 hover:text-emerald-500 transition">
-        <Icon />
-        <p>{label}</p>
-      </div>
-    </Link>
-  )
-}
 
 export default Navbar;
