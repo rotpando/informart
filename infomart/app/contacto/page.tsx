@@ -47,6 +47,7 @@ const EmailForm = () => {
 
       </form>
       </div>
+      
     </main>
   );
 };

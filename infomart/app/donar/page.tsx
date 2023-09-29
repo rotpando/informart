@@ -10,7 +10,7 @@ const Donar = () => {
     
     <br/>
     <br/>
-    <h2>{lang === 'es' ? 'Como ayudarnos' : 'How tu support us'}</h2>
+    <h2>{lang === 'es' ? 'Como ayudarnos' : 'How to support us'}</h2>
   <p>{lang === 'es' ? 'Como organización hemos decidido ser independientes y no recibir recursos estatales que puedan limitar nuestro libre accionar.' : 'As an organization, we have decided to remain independent and not accept state resources that could limit our free actions.'}</p>
   <p>{lang === 'es' ? 'Por eso es fundamental para financiar nuestro trabajo recibir donaciones de quienes apoyan nuestra lucha.' : 'Thats why receiving donations from those who support our cause is essential to fund our work.'}</p>
   <h2>{lang === 'es' ? 'Podés donar por MercadoPago' : 'You can donate through MercadoPago'}</h2>
